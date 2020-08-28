@@ -1,0 +1,191 @@
+/*
+    Template: Turnpike Events
+    Author: Saubhagya Rai
+    Author URI: www.saubhagyarai.com.np
+    Created: 2020
+    Description: Master CSS File
+*/
+
+/* **************
+
+TABLE OF CONTENT
+
+01. Generic Section
+02. Header Section
+
+*************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: rgb(250, 175, 64);
+  --secondary-color: rgb(255, 255, 255);
+  --tertiary-color: rgb(37, 37, 37);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--secondary-color);
+  overflow-y: scroll;
+}
+
+/*** Generic Section ***/
+
+p {
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+/* ** Header Section ** */
+
+.header {
+  position: relative;
+  height: 100vh;
+  widows: 100vw;
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 50%,
+    transparent 50%
+  );
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  /* position: fixed; */
+  z-index: 2;
+}
+
+.header nav .logo {
+  height: 90px;
+  width: 90px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.header nav ul {
+  position: relative;
+  display: flex;
+}
+
+.header nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.header nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 4px 10px;
+  color: var(--secondary-color);
+}
+
+.header nav ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.header nav ul li a:hover:before {
+  width: 50%;
+}
+
+.header nav ul li a.active:before {
+  width: 100%;
+}
+/* .header nav ul li:nth-child(1) a {
+  color: var(--tertiary-color);
+} */
+.header .item {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: -2;
+}
+
+.header .content {
+  position: relative;
+  height: 70vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  z-index: 0;
+}
+
+.header .content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+
+.header .content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.header .content a {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 18px;
+  width: 100%;
+  text-decoration: none;
+  padding: 15px;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.header .content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.header .content a:hover::before {
+  width: 100%;
+}
