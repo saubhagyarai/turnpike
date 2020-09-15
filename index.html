@@ -29,11 +29,25 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       crossorigin="anonymous"
     />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/slick-1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/slick-1.8.1/slick/slick-theme.css"
+    />
+
     <!-- Main Style -->
     <link rel="stylesheet" href="css/style.css" />
     <title>Turnpike Events</title>
@@ -98,13 +112,22 @@
           </ul>
         </div>
       </div>
-      <div class="item">
-        <img src="images/events.jpg" alt="" />
+      <div class="slider">
+        <div class="item">
+          <img src="images/events.jpg" alt="" />
+        </div>
+        <!-- <div class="item">
+          <img src="images/events2.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="images/events3.jpg" alt="" />
+        </div> -->
       </div>
     </header>
     <!-- End of Header Section -->
 
     <section class="events">
+      <h2 class="section-title">Turnpike</h2>
       <div class="container">
         <div class="items">
           <article class="card">
@@ -120,7 +143,7 @@
                   Autem, nostrum molestiae hic quos adipisci nesciunt magni!
                   Tempora excepturi quas nisi.
                 </p>
-                <a href="#">REad More</a>
+                <a href="#">Read More</a>
               </div>
             </div>
           </article>
@@ -131,13 +154,16 @@
             </div>
             <div class="content">
               <div>
-                <h3>Digital Marketing</h3>
+                <h3>
+                  Digital <br />
+                  Marketing
+                </h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Autem, nostrum molestiae hic quos adipisci nesciunt magni!
                   Tempora excepturi quas nisi.
                 </p>
-                <a href="#">REad More</a>
+                <a href="#">Read More</a>
               </div>
             </div>
           </article>
@@ -154,7 +180,7 @@
                   Autem, nostrum molestiae hic quos adipisci nesciunt magni!
                   Tempora excepturi quas nisi.
                 </p>
-                <a href="#">REad More</a>
+                <a href="#">Read More</a>
               </div>
             </div>
           </article>
@@ -171,7 +197,7 @@
                   Autem, nostrum molestiae hic quos adipisci nesciunt magni!
                   Tempora excepturi quas nisi.
                 </p>
-                <a href="#">REad More</a>
+                <a href="#">Read More</a>
               </div>
             </div>
           </article>
@@ -181,11 +207,37 @@
 
     <!-- End of Header -->
 
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="css/slick-1.8.1/slick/slick.min.js"
+    ></script>
     <script>
       function menuToggle() {
         var nav = document.getElementById("navbar");
         nav.classList.toggle("active");
       }
+
+      // Slider
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: true,
+          autoplay: false,
+          arrows: false,
+          autoplaySpeed: 3000,
+          adaptiveHeight: true,
+        });
+      });
     </script>
   </body>
 </html>
