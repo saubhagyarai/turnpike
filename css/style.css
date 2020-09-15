@@ -215,6 +215,96 @@ img {
 .menu-icon {
   display: none;
 }
+
+/* ==== Event Section ==== */
+.events {
+  position: relative;
+  margin: 30px 0px;
+}
+
+.events .items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.events .items .card {
+  position: relative;
+  height: 250px;
+  background: #f6f6f6;
+  width: 45%;
+  margin: 30px 0;
+}
+
+.events .items .card .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  color: var(--tertiary-color);
+  background: #f6f6f6;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.events .items .card:hover .img-box {
+  width: 150px;
+  height: 150px;
+  font-size: 3rem;
+  left: -75px;
+  top: calc(50% - 74px);
+  transition: 0.5s ease-in-out;
+  background: var(--primary-color);
+}
+
+.events .items .card .img-box:before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  text-align: center;
+  font-size: 3.2rem;
+  color: rgba(0, 0, 0, 0.3);
+  /* color: red; */
+  font-weight: 700;
+}
+
+.events .items .card:hover .img-box:before {
+  content: attr(data-text);
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+.events .items .card .img-box i {
+  max-width: 150px;
+  transition: 0.5s ease-in-out;
+}
+
+.events .items .card:hover .img-box i {
+  max-width: 85px;
+  color: #fff;
+  /* transition: 0.5s ease-in-out; */
+}
+
+.events .items .card .content {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 85px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ==== Responsive Section ==== */
 
 @media only screen and (max-width: 992px) {
