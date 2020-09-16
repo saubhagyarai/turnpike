@@ -123,6 +123,12 @@
           <img src="images/events3.jpg" alt="" />
         </div>
       </div>
+      <div class="arrow_prev">
+        <span><i class="fa fa-angle-left"></i></span>
+      </div>
+      <div class="arrow_next">
+        <span><i class="fa fa-angle-right"></i> </span>
+      </div>
     </header>
     <!-- End of Header Section -->
 
@@ -231,11 +237,13 @@
     <script>
       $(document).ready(function () {
         $(".slider").slick({
-          dots: true,
+          dots: false,
           autoplay: true,
           arrows: true,
           autoplaySpeed: 3000,
           adaptiveHeight: true,
+          prevArrow: ".arrow_prev",
+          nextArrow: ".arrow_next",
         });
       });
     </script>
