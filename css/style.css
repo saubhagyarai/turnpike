@@ -158,6 +158,10 @@ h2.section-title {
   height: 100%;
 }
 
+.header .slick-slide img {
+  height: 100vh;
+}
+
 .header .content {
   position: relative;
   height: 70vh;
