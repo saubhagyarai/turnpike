@@ -58,7 +58,7 @@ h2.section-title {
   font-weight: 700;
   position: absolute;
   text-transform: uppercase;
-  color: rgba(122, 122, 122, 0.15);
+  color: rgba(122, 122, 122, 0.5);
   top: 50%;
   left: 0;
   -webkit-transform: translateX(-40%) translateY(-50%) rotate(90deg);
@@ -394,11 +394,10 @@ h2.section-title {
 /* ==== About Us Section ==== */
 .about {
   position: relative;
-  margin: 30px 0;
   height: 100vh;
   background: linear-gradient(
     to right,
-    var(--tertiary-color) 51%,
+    rgba(0, 0, 0, 0.7) 51%,
     transparent 50%
   );
   vertical-align: middle;
@@ -406,7 +405,6 @@ h2.section-title {
 
 .about .about-text {
   width: 50%;
-  margin: 30px 0;
   vertical-align: middle;
   padding: 60px 20px;
   color: #fff;
@@ -425,11 +423,67 @@ h2.section-title {
   position: absolute;
   right: 0;
   top: 0;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   border: none;
+  z-index: -1;
 }
 /* ==== End of About Us Section ==== */
+
+/* ==== Why Us Section */
+.why {
+  position: relative;
+  /* margin: 60px 0; */
+  background: linear-gradient(
+    to right,
+    transparent 51%,
+    var(--primary-color) 50%
+  );
+}
+
+.why .text-area {
+  padding: 60px 20px;
+  width: 50%;
+}
+
+.why .text-area p {
+  margin: 30px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.why .text-area a.why-btn {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 18px;
+  /* width: 100%; */
+  text-decoration: none;
+  padding: 15px;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.why .text-area .why-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+.why .text-area .why-btn:hover::before {
+  width: 100%;
+}
+
+.why .text-area .why-btn:hover
+/* ==== End of Why Us Section ==== */
 /* ==== Responsive Section ==== */
 
 @media only screen and (max-width: 992px) {
