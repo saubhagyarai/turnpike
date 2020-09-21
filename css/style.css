@@ -39,7 +39,10 @@ body {
 /*** Generic Section ***/
 
 p {
-  font-size: 14px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin: 20px 0;
 }
 
 ul {
@@ -439,6 +442,7 @@ h2.section-title {
     transparent 51%,
     var(--primary-color) 50%
   );
+  height: 100vh;
 }
 
 .why .text-area {
@@ -482,7 +486,135 @@ h2.section-title {
   width: 100%;
 }
 
-.why .text-area .why-btn:hover
+.why .content-right {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background: transparent;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  /* padding: 60px 20px; */
+}
+
+.why .content-right .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 25px 20px;
+}
+
+.why .content-right .content .card-box {
+  position: relative;
+  width: 250px;
+  /* background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b); */
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.why .content-right .content .card-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.why .content-right .content .card-box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* box-shadow: inset 0 0 50px #000; */
+  /* background: #222; */
+  background: #f6f6f6;
+  z-index: 1000;
+}
+
+.why .content-right .content .card-box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.why .content-right .content .card-box .percent .number h2 {
+  color: #777;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.5s;
+}
+
+.why .content-right .content .card-box:hover .percent .number h2 {
+  color: var(--tertiary-color);
+  font-size: 60px;
+}
+
+.why .content-right .content .card-box .percent .number h2 span {
+  font-size: 24px;
+  color: #777;
+  transition: 0.5s;
+}
+
+.why .content-right .content .card-box:hover .percent .number h2 span {
+  color: var(--tertiary-color);
+}
+
+.why .content-right .content .card-box .text {
+  position: relative;
+  color: #777;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.why .content-right .content .card-box:hover .text {
+  color: var(--tertiary-color);
+}
+
+.why .content .why .content .card-box svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+.why .content .card-box svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #777;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.why .content .card-box svg circle:nth-child(2) {
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.why .content .card-box svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke: var(--primary-color);
+}
 /* ==== End of Why Us Section ==== */
 /* ==== Responsive Section ==== */
 
