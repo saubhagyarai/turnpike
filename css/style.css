@@ -23,6 +23,10 @@ TABLE OF CONTENT
   --tertiary-color: rgb(37, 37, 37);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -292,7 +296,8 @@ h2.section-title {
 /* ==== Event Section ==== */
 .business {
   position: relative;
-  margin: 60px 0px;
+  margin: 30px 0px;
+  height: 100vh;
 }
 
 .business .items {
@@ -301,6 +306,8 @@ h2.section-title {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 20px;
+  height: 100vh;
+  align-items: center;
 }
 
 .business .items .card {
