@@ -297,7 +297,7 @@ h2.section-title {
 .business {
   position: relative;
   margin: 30px 0px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .business .items {
@@ -407,7 +407,7 @@ h2.section-title {
   height: 100vh;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.7) 51%,
+    rgba(0, 0, 0, 0.5) 50%,
     transparent 50%
   );
   vertical-align: middle;
@@ -446,7 +446,7 @@ h2.section-title {
   /* margin: 60px 0; */
   background: linear-gradient(
     to right,
-    transparent 51%,
+    transparent 50%,
     var(--primary-color) 50%
   );
   height: 100vh;
@@ -623,6 +623,175 @@ h2.section-title {
   stroke: var(--primary-color);
 }
 /* ==== End of Why Us Section ==== */
+
+/* ==== Contact Form ==== */
+
+.contact {
+  position: relative;
+  padding: 60px 20px;
+  background: var(--tertiary-color);
+}
+.contact img {
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+  top: 0;
+}
+
+.contact .left-content,
+.contact .left-content p {
+  color: var(--secondary-color);
+}
+
+.contact .left-content ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.contact .left-content ul li .icon {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #fff;
+  margin-right: 20px;
+}
+
+.contact .left-content ul li .text-content p {
+  margin: 5px 0px;
+  font-size: 15px;
+}
+
+.contact .right-content {
+  color: #fff;
+  background: var(--primary-color);
+  /* opacity: 0.5; */
+  padding: 20px;
+  /* text-align: center; */
+  margin: auto;
+}
+
+.contact .right-content .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300 px, 1fr));
+}
+
+.contact .right-content .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+
+.contact .right-content .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+}
+
+.contact .right-content .inputBox input,
+.contact .row100 .inputBox.text-area textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  z-index: 1;
+  color: #000;
+}
+
+.contact .right-content .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.contact .row100 .inputBox input:focus + .text,
+.contact .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.contact .row100 .inputBox input:focus ~ .line,
+.contact .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.contact .row100 .inputBox.text-area {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.contact .row100 .inputBox.text-area textarea {
+  height: 100%;
+  resize: none;
+}
+
+.contact .row100 .inputBox textarea:focus + .text,
+.contact .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.contact .row100 .inputBox textarea:focus ~ .line,
+.contact .row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+.contact .row100 input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px;
+}
+/* ==== End of contact Form ==== */
+
+.footer {
+  background: var(--primary-color);
+  height: 100%;
+  width: 100%;
+}
+.footer p {
+  padding: 20px 0;
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
 /* ==== Responsive Section ==== */
 
 @media only screen and (max-width: 992px) {
