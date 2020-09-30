@@ -3,6 +3,7 @@ section.showcase {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  padding: 0;
   background: var(--tertiary-color);
 }
 
@@ -36,8 +37,20 @@ section.showcase .content p {
   font-size: 2rem;
 }
 
+section.dm-about {
+  position: relative;
+  padding: 60px 20px 30px 20px;
+  background: var(--secondary-color);
+}
+
+section.dm-about .text-area {
+  text-align: center;
+}
+
+section.services {
+  position: relative;
+}
 section.services .content {
-  margin: 60px 0px;
   position: relative;
 }
 
@@ -48,7 +61,18 @@ section.services .content .item {
   margin: 30px 0;
   display: flex;
   justify-content: flex-start;
-  /* align-items: center; */
+}
+
+section.design {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section.design .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 section.services .content .item .icon {
@@ -63,58 +87,87 @@ section.showcase .content .top-event h3 {
   text-transform: uppercase;
   font-weight: 700;
   width: fit-content;
-  margin: auto;
+  margin: 30px auto;
   padding: 10px;
   background: var(--primary-color);
 }
 section.showcase .content .top-event p {
-  display: inline-block;
   padding: 0 10px;
+  border: 3px solid var(--primary-color);
 }
 
-section.showcase .content .tournaments {
+section.tournaments {
+  position: relative;
+  padding: 60px 20px;
+}
+
+section.tournaments .text {
+  text-align: center;
+}
+
+section.tournaments .content {
   position: relative;
   padding-top: 30px;
 }
 
-section.showcase .content .tournaments .title {
+section.tournaments .content .title {
   position: relative;
   height: 90px;
   margin: 20px;
+  background: var(--tertiary-color);
 }
 
-section.showcase .content .tournaments a {
+section.tournaments .content a {
   font-size: 2rem;
   text-transform: uppercase;
   margin: auto;
   font-weight: 700;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   position: relative;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 15px;
+  padding: 20px;
   align-self: flex-start;
 }
 
-section.showcase .content .tournaments a:before {
+section.tournaments .content a:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   height: 100%;
-  background: var(--primary-color);
   z-index: -1;
   transition: 0.5s ease-in-out;
 }
 
-/* section.showcase .content .tournaments a:hover:before {
-  width: 100%;
-} */
-
 section.article {
-  margin: 60px 20px;
+  padding: 60px 20px;
+  position: relative;
+}
+
+section.collab {
+  position: relative;
+  padding: 60px 20px;
+}
+
+section.collab .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section.collab .items img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: 0 30px;
+}
+
+section.collab .text {
+  text-align: center;
 }

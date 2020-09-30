@@ -60,16 +60,32 @@ img {
   -o-object-fit: cover;
 }
 
-h2.section-title {
+section {
+  position: relative;
+  padding: 60px 20px;
+  background: var(--secondary-color);
+}
+
+.section-title {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+  /* color: #fbb845; */
+  width: 0;
+  transition: 0.7s cubic-bezier(0.25, 0.1, 0, 1.59);
+  left: -15px;
+  transform: translateY(-50%);
+  cursor: context-menu;
+}
+
+.section-title h2 {
+  writing-mode: vertical-rl;
+  color: #fff;
   font-size: 4.5rem;
   font-weight: 700;
-  position: absolute;
+  position: relative;
   text-transform: uppercase;
   color: rgba(122, 122, 122, 0.5);
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateX(-40%) translateY(-50%) rotate(90deg);
-  transform: translateX(-40%) translateY(-50%) rotate(90deg);
 }
 
 h2 {
