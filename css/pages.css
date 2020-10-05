@@ -1,12 +1,203 @@
-/* === Digital Marketing Page === */
 section.showcase {
-  height: 100vh;
+  height: 600px;
   position: relative;
   overflow: hidden;
   padding: 0;
   background: var(--tertiary-color);
 }
 
+/* === Studio Page === */
+
+section.showcase .item {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+
+section.showcase .slider-content {
+  position: absolute;
+  bottom: 100px;
+  left: 190px;
+  color: #fff;
+  background: var(--primary-color);
+  /* padding: 10px 25px; */
+  display: inline-block;
+}
+
+section.showcase .slider-content a {
+  position: relative;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  font-size: 18px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px 25px;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+section.showcase .slider-content span {
+  padding-right: 10px;
+}
+
+.shows a:hover,
+.item a:hover {
+  text-decoration: none;
+}
+
+.arrow_prev.slick-arrow,
+.show_arrow_prev.slick-arrow,
+.new_arrow_prev.slick-arrow,
+.podcast_arrow_prev.slick-arrow,
+.popular_arrow_prev.slick-arrow {
+  position: absolute;
+  left: 30px;
+  top: 40%;
+  color: #fff;
+  font-size: 3rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow_next.slick-arrow,
+.show_arrow_next.slick-arrow,
+.new_arrow_next.slick-arrow,
+.podcast_arrow_next.slick-arrow,
+.popular_arrow_next.slick-arrow {
+  cursor: pointer;
+
+  position: absolute;
+  right: 30px;
+  top: 40%;
+  color: #fff;
+  font-size: 3rem;
+  transform: translateY(-50%);
+}
+
+.show_arrow_prev.slick-arrow,
+.show_arrow_next.slick-arrow,
+.new_arrow_prev.slick-arrow,
+.new_arrow_next.slick-arrow,
+.podcast_arrow_prev.slick-arrow,
+.podcast_arrow_next.slick-arrow,
+.popular_arrow_prev.slick-arrow,
+.popular_arrow_next.slick-arrow {
+  color: var(--tertiary-color);
+  top: 60%;
+}
+
+.show_arrow_prev.slick-arrow,
+.new_arrow_prev.slick-arrow,
+.podcast_arrow_prev.slick-arrow,
+.popular_arrow_prev.slick-arrow {
+  left: 10%;
+}
+
+.show_arrow_next.slick-arrow,
+.new_arrow_next.slick-arrow,
+.podcast_arrow_next.slick-arrow,
+.popular_arrow_next.slick-arrow {
+  right: 10%;
+}
+
+.new_arrow_prev.slick-arrow,
+.new_arrow_next.slick-arrow,
+.podcast_arrow_prev.slick-arrow,
+.podcast_arrow_next.slick-arrow,
+.popular_arrow_prev.slick-arrow,
+.popular_arrow_next.slick-arrow {
+  top: 50%;
+}
+section.shows,
+section.podcast {
+  padding-bottom: 0px;
+}
+
+section.shows h2 {
+  text-align: center;
+}
+
+.show-content,
+.new-content,
+.podcast-content,
+.popular-content {
+  margin: 30px 10px;
+  text-align: center;
+}
+.show-content .item,
+.new-content .item,
+.podcast-content .item,
+.popular-content .item {
+  width: 200px;
+  height: auto;
+  padding: 0px 10px;
+  border-radius: 50%;
+}
+
+.show-content .item img {
+  /* height: 80%; */
+  min-height: 200px;
+}
+
+.shows .show-content .item p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.new-content .item img,
+.podcast-content .item img,
+.popular-content .item img {
+  min-height: 300px;
+  transition: ease-in-out 0.5s;
+}
+
+.new-content .item img:hover,
+.podcast-content .item img:hover,
+.popular-content .item img:hover {
+  transform: scale(1.1);
+}
+
+section.new {
+  padding-bottom: 0px;
+}
+
+section.studio-single {
+  height: 400px;
+}
+
+section.studio-single .studio-content {
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  color: #fff;
+}
+
+section.studio-single .studio-content img {
+  height: 100px;
+  width: 100px;
+  opacity: 1;
+}
+
+section.studio-single .studio-content .text {
+  margin-left: 20px;
+  color: #fff;
+  padding: 0 155px 0 0;
+}
+section.studio-single .studio-content .text p {
+  color: #fff;
+}
+
+section.video .content a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* === Digital Marketing Page === */
 section.showcase img {
   opacity: 0.5;
 }
