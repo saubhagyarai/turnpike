@@ -16,8 +16,8 @@ section.showcase .item {
 
 section.showcase .slider-content {
   position: absolute;
-  bottom: 100px;
-  left: 190px;
+  bottom: 55px;
+  left: 15%;
   color: #fff;
   background: var(--primary-color);
   /* padding: 10px 25px; */
@@ -110,13 +110,14 @@ section.showcase .slider-content span {
 .popular_arrow_prev.slick-arrow,
 .popular_arrow_next.slick-arrow {
   top: 50%;
+  z-index: 555;
 }
 section.shows,
 section.podcast {
   padding-bottom: 0px;
 }
 
-section.shows h2 {
+section.shows h3 {
   text-align: center;
 }
 
@@ -124,7 +125,7 @@ section.shows h2 {
 .new-content,
 .podcast-content,
 .popular-content {
-  margin: 30px 10px;
+  margin: 30px 0px;
   text-align: center;
 }
 .show-content .item,
@@ -139,7 +140,9 @@ section.shows h2 {
 
 .show-content .item img {
   /* height: 80%; */
-  min-height: 200px;
+  min-height: 215px;
+  object-fit: contain;
+  -o-object-fit: contain;
 }
 
 .shows .show-content .item p {
@@ -150,7 +153,7 @@ section.shows h2 {
 .new-content .item img,
 .podcast-content .item img,
 .popular-content .item img {
-  min-height: 300px;
+  height: 300px;
   transition: ease-in-out 0.5s;
 }
 
@@ -173,6 +176,7 @@ section.studio-single .studio-content {
   left: 10%;
   top: 70%;
   transform: translateY(-50%);
+  align-items: center;
   display: flex;
   color: #fff;
 }
@@ -230,7 +234,7 @@ section.showcase .content p {
 
 section.dm-about {
   position: relative;
-  padding: 60px 20px 30px 20px;
+  padding: 60px 20px 0px 20px;
   background: var(--secondary-color);
 }
 
@@ -255,6 +259,7 @@ section.services .content .item {
 }
 
 section.design {
+  padding-top: 0px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -284,6 +289,7 @@ section.showcase .content .top-event h3 {
   width: fit-content;
   margin: 30px auto;
   padding: 10px;
+  display: table;
   background: var(--primary-color);
 }
 section.showcase .content .top-event p {
@@ -293,7 +299,7 @@ section.showcase .content .top-event p {
 
 section.tournaments {
   position: relative;
-  padding: 60px 20px;
+  padding: 60px 20px 0px;
 }
 
 section.tournaments .text {
@@ -307,7 +313,7 @@ section.tournaments .content {
 
 section.tournaments .content .title {
   position: relative;
-  height: 90px;
+  height: auto;
   margin: 20px;
   background: var(--tertiary-color);
 }
@@ -341,7 +347,7 @@ section.tournaments .content a:before {
 }
 
 section.article {
-  padding: 60px 20px;
+  padding: 60px 20px 0;
   position: relative;
 }
 
@@ -426,4 +432,12 @@ section.score-table {
 
 section.score-table table {
   margin: 30px 0;
+}
+
+section.scores .item .left-content h3,
+section.scores .item .right-content h3 {
+  display: flex;
+  font-size: 1.75rem;
+  justify-content: center;
+  align-items: center;
 }

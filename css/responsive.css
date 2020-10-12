@@ -1,0 +1,467 @@
+@media only screen and (max-width: 1410px) {
+  .show_arrow_prev.slick-arrow,
+  .new_arrow_prev.slick-arrow,
+  .podcast_arrow_prev.slick-arrow,
+  .popular_arrow_prev.slick-arrow {
+    left: 3%;
+  }
+
+  .show_arrow_next.slick-arrow,
+  .new_arrow_next.slick-arrow,
+  .podcast_arrow_next.slick-arrow,
+  .popular_arrow_next.slick-arrow {
+    right: 3%;
+  }
+
+  .section-title h2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .why .content-right .content .card-box {
+    width: 200px;
+  }
+
+  section.studio-single .studio-content {
+    top: 50%;
+  }
+
+  section.studio-single .studio-content .text {
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  nav {
+    justify-content: space-between;
+    padding-left: 30px;
+  }
+  nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* display: initial; */
+    background: var(--secondary-color);
+    z-index: 100000;
+    padding: 100px 0;
+  }
+
+  nav.active ul {
+    display: initial;
+  }
+
+  nav ul li {
+    padding: 20px;
+    text-align: center;
+    color: #000;
+  }
+
+  nav ul li a {
+    color: var(--tertiary-color);
+    font-size: 2rem;
+  }
+
+  nav ul li a:hover:before {
+    width: 100%;
+  }
+
+  nav .menu-icon {
+    display: initial;
+    position: fixed;
+    right: 50px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    z-index: 1000000;
+    color: #fff;
+    /* background-image: url(/images/menu.png); */
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    /* font-size: 34px; */
+    transition: 0.5s ease-in-out;
+
+    background-position: 6px;
+  }
+
+  nav .menu-icon.cross {
+    display: none;
+  }
+
+  nav.active .menu-icon.cross {
+    /* background: var(--primary-color); */
+    display: initial;
+    color: black;
+    transition: 0.5s ease-in-out;
+
+    /* color: var(--secondary-color); */
+  }
+
+  nav .form-inline {
+    margin-left: 35%;
+  }
+
+  nav .btn {
+    color: var(--tertiary-color);
+    border: 1px solid #dcdcdc;
+    margin: auto;
+  }
+
+  .business .items .card:hover .img-box {
+    width: 120px;
+    height: 120px;
+    top: calc(50% - 55px);
+    left: -55px;
+  }
+
+  .business .items .card .content {
+    width: calc(100% - 60px);
+  }
+
+  .business .items .card .content p {
+    margin: 10px 0;
+  }
+
+  .why .content-right {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .why .content-right .content .card-box {
+    width: 300px;
+  }
+
+  .why .text-area {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .show-content,
+  .new-content,
+  .podcast-content,
+  .popular-content {
+    margin: 30px 0px 0px 0px;
+  }
+
+  section.tournaments .content a {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px;
+  }
+
+  section.collab .items img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  section.tournaments .content .title {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  nav .logo {
+    height: 75px;
+    width: 75px;
+  }
+  .slider {
+    width: 100%;
+    z-index: 0;
+  }
+
+  .header .content {
+    z-index: 1;
+    width: 75%;
+  }
+  .header .content h2,
+  .header .content p,
+  .header .content a {
+    color: #fff;
+  }
+
+  .header .social-icons,
+  .header .social-icons ul li i {
+    z-index: 2;
+    color: #fff;
+  }
+
+  .header .arrow_prev,
+  .header .arrow_next {
+    top: 94%;
+  }
+  .header .arrow_prev {
+    left: 82%;
+  }
+
+  .header .arrow_next {
+    left: calc(82% + 55px);
+  }
+
+  .why .content-right .content .card-box {
+    width: 215px;
+  }
+  section.showcase .content p {
+    display: none;
+  }
+  section.showcase .content .top-event p {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  section.tournaments .content a {
+    font-size: 1.5rem;
+  }
+  section.scores .item .left-content img,
+  section.scores .item .right-content img {
+    height: 50px;
+  }
+  section.scores .item h3 span {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 737px) {
+  .section-title h2 {
+    font-size: 3rem;
+  }
+  .header .content p {
+    display: none;
+  }
+
+  .header .content h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .header .arrow_prev,
+  .header .arrow_next {
+    top: 85%;
+  }
+
+  .about {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 100%,
+      transparent 50%
+    );
+  }
+
+  .about .about-text {
+    width: 100%;
+  }
+
+  .new-content .item img,
+  .podcast-content .item img,
+  .popular-content .item img {
+    height: 200px;
+  }
+  .show-content .item img {
+    min-height: 125px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p,
+  .about .about-text p,
+  .why .text-area p,
+  .contact .right-content .inputBox input,
+  .contact .row100 .inputBox.text-area textarea,
+  .contact .right-content .inputBox .text,
+  .footer p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+  .header {
+    height: 100%;
+  }
+
+  .header .content p {
+    font-size: 14px;
+  }
+
+  .header .arrow_prev,
+  .header .arrow_next {
+    top: 92%;
+  }
+
+  .header .arrow_prev {
+    left: 71%;
+  }
+
+  .header .arrow_next {
+    left: calc(71% + 55px);
+  }
+
+  nav .form-inline {
+    /* margin-left: 0%; */
+    width: 50%;
+    margin: auto;
+  }
+
+  .business .items .card {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .why .content-right .content .card-box {
+    width: 300px;
+    margin: 10px 0px;
+  }
+
+  .business .items .card .img-box:before {
+    font-size: 2.5rem;
+  }
+
+  section.showcase .item,
+  section.showcase {
+    height: 450px;
+  }
+
+  section.shows h3 {
+    font-size: 1.2rem;
+  }
+
+  .show-content,
+  .new-content,
+  .podcast-content,
+  .popular-content {
+    margin: 15px 0px 0px 0px;
+  }
+
+  .contact {
+    padding: 30px 20px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  section.studio-single {
+    height: 300px;
+  }
+
+  section.studio-single .studio-content .text p {
+    display: none;
+  }
+
+  .contact .right-content {
+    padding: 15px;
+  }
+
+  section.showcase .content h2 {
+    font-size: 2rem;
+  }
+
+  section.dm-about {
+    padding-top: 30px;
+  }
+
+  section.services .content .item {
+    margin: 15px 0 0 0;
+  }
+
+  section.services .content .item .icon {
+    margin-right: 10px;
+  }
+
+  section.tournaments {
+    padding: 30px 20px 0px;
+  }
+  section.collab .items img {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 0 5px;
+  }
+  section.tournaments .content {
+    padding-top: 15px;
+  }
+  section.article {
+    padding: 30px 20px 0;
+  }
+  section.collab {
+    padding: 30px 20px;
+  }
+  section.showcase .content .top-event p {
+    font-size: 1.2rem;
+  }
+
+  section.showcase .content .top-event h3 {
+    font-size: 1.5rem;
+  }
+
+  section.showcase.sports-single {
+    height: 300px;
+  }
+  section.scores .item .left-content img,
+  section.scores .item .right-content img {
+    height: 40px;
+  }
+  section.scores .item h3 span {
+    font-size: 1.5rem;
+  }
+  section.scores .item .left-content h3,
+  section.scores .item .right-content h3 {
+    font-size: 1.2rem;
+  }
+  section.scores .item p {
+    font-size: 14px;
+  }
+  section.scores .items {
+    margin: 10px 0;
+  }
+
+  section.scores {
+    padding: 30px 20px 0px;
+  }
+
+  section.score-table {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .business .items .card:hover .img-box {
+    width: 100px;
+    height: 100px;
+    top: calc(50% - 45px);
+    left: -32px;
+  }
+
+  section.scores .item p {
+    font-size: 10px;
+  }
+
+  section.scores .item .left-content img,
+  section.scores .item .right-content img {
+    height: 26px;
+  }
+
+  section.scores .item .left-content h3,
+  section.scores .item .right-content h3 {
+    font-size: 0.8rem;
+  }
+
+  section.scores .item h3 span {
+    font-size: 1rem;
+  }
+}
