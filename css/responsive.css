@@ -188,6 +188,9 @@
     color: #fff;
   }
 
+  .header .social-icons {
+    bottom: 70px;
+  }
   .header .social-icons,
   .header .social-icons ul li i {
     z-index: 2;
@@ -198,6 +201,7 @@
   .header .arrow_next {
     top: unset;
     left: unset;
+    bottom: 20px;
   }
   .header .arrow_prev {
     right: 100px;
@@ -292,6 +296,11 @@
 
   section {
     padding: 30px 20px;
+  }
+
+  nav .logo {
+    height: 65px;
+    width: 65px;
   }
   .header {
     height: 100%;
@@ -455,6 +464,9 @@
   }
   nav .menu-icon {
     right: 15px;
+  }
+  .header .content {
+    padding-top: 60px;
   }
   .header .content h2 {
     margin-bottom: 15px;
