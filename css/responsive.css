@@ -212,6 +212,9 @@
     right: calc(100px - 55px);
   }
 
+  .business .items .card {
+    width: 47%;
+  }
   .why .content-right .content .card-box {
     width: 215px;
   }
